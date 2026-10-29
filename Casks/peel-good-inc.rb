@@ -19,8 +19,11 @@ cask "peel-good-inc" do
   binary "#{appdir}/Peel Good Inc.app/Contents/Helpers/labelize"
 
   # Not notarized yet: clear the quarantine flag so Gatekeeper lets the ad hoc signed app open.
-  postflight do
-    system_command "/usr/bin/xattr", args: ["-dr", "com.apple.quarantine", "#{appdir}/Peel Good Inc.app"]
+  postflight_steps do
+    run "/usr/bin/xattr",
+        args:           ["-dr", "com.apple.quarantine", "{{appdir}}/Peel Good Inc.app"],
+        writable_paths: ["Peel Good Inc.app"],
+        writable_base:  :appdir
   end
 
   uninstall quit: "com.fermiumlabs.labelize"
