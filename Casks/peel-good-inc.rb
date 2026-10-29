@@ -10,37 +10,28 @@ cask "peel-good-inc" do
   livecheck do
     url :url
     strategy :github_latest
-  
-  caveats <<~EOS
-    Peel Good Inc. isn't notarized by Apple yet. This cask removes the quarantine
-    flag after installing so the app opens normally.
-  EOS
-end
+  end
 
   depends_on macos: :sequoia
 
   app "Peel Good Inc.app"
-  # CLI shipped inside the app bundle (Contents/Helpers avoids a case clash with Contents/MacOS/Labelize).
-  # The `labelize` command keeps its name.
+  # The CLI lives in Contents/Helpers: "labelize" and the app's "Labelize" executable clash on APFS.
   binary "#{appdir}/Peel Good Inc.app/Contents/Helpers/labelize"
 
   # Not notarized yet: clear the quarantine flag so Gatekeeper lets the ad hoc signed app open.
   postflight do
     system_command "/usr/bin/xattr", args: ["-dr", "com.apple.quarantine", "#{appdir}/Peel Good Inc.app"]
-  
-  caveats <<~EOS
-    Peel Good Inc. isn't notarized by Apple yet. This cask removes the quarantine
-    flag after installing so the app opens normally.
-  EOS
-end
+  end
 
   uninstall quit: "com.fermiumlabs.labelize"
 
   zap trash: [
     "~/Library/Application Support/Labelize",
+    "~/Library/Application Support/Peel Good",
     "~/Library/Caches/com.fermiumlabs.labelize",
     "~/Library/HTTPStorages/com.fermiumlabs.labelize",
     "~/Library/Logs/Labelize",
+    "~/Library/Logs/Peel Good",
     "~/Library/Preferences/com.fermiumlabs.labelize.plist",
     "~/Library/Saved Application State/com.fermiumlabs.labelize.savedState",
   ]
