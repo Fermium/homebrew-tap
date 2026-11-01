@@ -1,6 +1,6 @@
 cask "peel-good-inc" do
-  version "0.4.0"
-  sha256 "581255cea654506f3f66f76db0e4d0163871b5ba79784ccd1d825dc415a21c69"
+  version "0.4.1"
+  sha256 "55f649eba93abd4303cb0b2a14606f66eeffda1f08db7dfd1cbc66a631a8fa19"
 
   url "https://github.com/fermium/peel-good-inc/releases/download/v#{version}/PeelGoodInc-#{version}.dmg"
   name "Peel Good Inc."
