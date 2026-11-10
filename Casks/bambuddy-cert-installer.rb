@@ -1,6 +1,6 @@
 cask "bambuddy-cert-installer" do
-  version "0.1.0"
-  sha256 "68987ee0052c6cd57fdd3a4a300e4362c6f65c77053833ee1e0dc8c303b0c546"
+  version "0.1.1"
+  sha256 "e6d6c3d90e6b00cbe6db1275c8d3adccacbaa616ec71bcad2f7a72de97ca262f"
 
   url "https://github.com/fermium/bambuddy-cert-installer/releases/download/v#{version}/BambuddyCertInstaller-#{version}.zip"
   name "Bambuddy Cert Installer"
