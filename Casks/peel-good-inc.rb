@@ -2,14 +2,16 @@ cask "peel-good-inc" do
   version "0.5.2"
   sha256 "962e880c9d72ca46ca00700d551acd6a1197bdbf597289b83f3e14c5505df96a"
 
-  url "https://github.com/fermium/peel-good-inc/releases/download/v#{version}/PeelGoodInc-#{version}.dmg"
+  url "https://fermium.ltd.uk/apps/peel-good-inc/releases/#{version}/PeelGoodInc-#{version}.dmg"
   name "Peel Good Inc."
   desc "Menu bar app that prints any PDF, SVG or image as a thermal printer label"
-  homepage "https://github.com/fermium/peel-good-inc"
+  homepage "https://fermium.ltd.uk/apps/peel-good-inc/"
 
   livecheck do
-    url :url
-    strategy :github_latest
+    url "https://fermium.ltd.uk/apps/peel-good-inc/latest.json"
+    strategy :json do |json|
+      json["version"]
+    end
   end
 
   depends_on macos: :sequoia
