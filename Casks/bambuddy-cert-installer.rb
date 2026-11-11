@@ -1,6 +1,6 @@
 cask "bambuddy-cert-installer" do
-  version "0.1.1"
-  sha256 "e6d6c3d90e6b00cbe6db1275c8d3adccacbaa616ec71bcad2f7a72de97ca262f"
+  version "0.1.2"
+  sha256 "d1a86fcefda53af6b582a4e70b5a373063b728f3b1ea8fee035acf3c162f2a96"
 
   url "https://fermium.ltd.uk/apps/bambuddy-cert-installer/releases/#{version}/BambuddyCertInstaller-#{version}.zip"
   name "Bambuddy Cert Installer"
