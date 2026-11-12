@@ -1,6 +1,6 @@
 cask "state-of-the-notch" do
-  version "0.1.0"
-  sha256 "aed8cd7b96659a30b0164c220295ee6e26d90588e5db732d4df20b008bef6ccb"
+  version "0.2.0"
+  sha256 "8bae284cff4024784dc837ef316d975cdac0c696a010e15243ed54c9a046b829"
 
   url "https://fermium.ltd.uk/apps/state-of-the-notch/releases/#{version}/StateOfTheNotch-#{version}.dmg"
   name "State of the Notch"
