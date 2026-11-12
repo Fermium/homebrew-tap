@@ -1,6 +1,6 @@
 cask "bubucode" do
-  version "0.1.3"
-  sha256 "e154e14c0457641bf5ecd8773e12653c32f5faa552239cc3c9e1a593b30d2670"
+  version "0.1.4"
+  sha256 "e37d50abe23e46d82a0513ae07a9c8bcccff9a12b6721e3aa9250bdb8f0f2b77"
 
   url "https://fermium.ltd.uk/apps/bubucode/releases/#{version}/BuBuCode-#{version}.dmg"
   name "BuBuCode"
