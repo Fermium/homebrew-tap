@@ -1,6 +1,6 @@
 cask "usb-atlas" do
-  version "0.1.1"
-  sha256 "2b36c8c378624f770424002a5b99dffc75fe3e9323082fbae50d303753d77009"
+  version "0.1.2"
+  sha256 "87690a66e3d75ac89d87ad833567de4c04998c1b468d290ebc454aaf0698fa7e"
 
   url "https://fermium.ltd.uk/apps/usb-atlas/releases/#{version}/USBAtlas-#{version}.dmg"
   name "USB Atlas"
