@@ -1,6 +1,6 @@
 cask "fill-light" do
-  version "0.1.0"
-  sha256 "58ca9f3ea42128eb608491b50833312058235dd5376af9244751ef707dda54e8"
+  version "0.1.1"
+  sha256 "7305759638ec7933b6839ad23ccc47d0025a0a2f96e07a40fcfc3ef919154d88"
 
   url "https://fermium.ltd.uk/apps/fill-light/releases/#{version}/FillLight-#{version}.dmg"
   name "Fill Light"
