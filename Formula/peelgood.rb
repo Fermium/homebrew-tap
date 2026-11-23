@@ -3,8 +3,8 @@
 class Peelgood < Formula
   desc "Print any PDF, SVG or image as a thermal printer label (command-line)"
   homepage "https://github.com/fermium/peel-good-inc"
-  url "https://github.com/Fermium/peel-good-inc/archive/refs/tags/v0.6.0.tar.gz"
-  sha256 "216b3dbde09570811544678c5468bd760332481ba0e3083d879e4e479ff3fa5e"
+  url "https://github.com/Fermium/peel-good-inc/archive/refs/tags/v0.6.1.tar.gz"
+  sha256 "d22459eb214e1a3f8d7595dd2cf8e3a66257b1e051bb9396b9b10de2e910c8d9"
   license "MIT"
 
   depends_on xcode: ["26.0", :build]
